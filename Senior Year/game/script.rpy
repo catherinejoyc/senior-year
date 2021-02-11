@@ -1,7 +1,11 @@
-define michelle = Character("SpiceGirl2004xX", color="#c8ffc8")
-define jason = Character("football_ladXD")
-define damien = Character("Lord_Damien_The_Fifth")
-define lucy = Character("qUeEn_Of_RaNdOm")
+define n = nvl_narrator
+
+define michelle = Character("SpiceGirl2004xX", color="#e7318d", kind=nvl)
+define jason = Character("football_ladXD", color="#0000B2", kind=nvl)
+define damien = Character("Lord_Damien_The_Fifth", color="#49674e", kind=nvl)
+define lucy = Character("qUeEn_Of_RaNdOm", color="#bcbd51", kind=nvl)
+define mc_user = Character("[username]", kind=nvl)
+define mc = Character("[name]")
 
 label start:
 
@@ -9,14 +13,23 @@ label start:
 
     show eileen happy
 
-    "SpiceGirl2004xX added you to group chat NORTHRIDE HIGH BLOG"
-    "football_ladXD is online"
-    "qUeEn_Of_RaNdOm is online"
-    "Lord_Damien_The_Fifth is online"
+    n "You have been invited to a group chat. \nPlease enter your name and a username to join."
+
+    python:
+        name = renpy.input(_("Please enter your first name."))
+        name = name.strip() or __("Sam")
+        username = renpy.input(_("Please enter a username."))
+        username = username.strip() or __("xXuncreative_personXx")
+
+    nvl clear
+
+    n "[michelle] added you to group chat NORTHRIDE HIGH BLOG"
+    n "[mc_user] is online"
+    n "[jason] is online"
+    n "[lucy] is online"
+    n "[damien] is online"
 
     michelle "ok guys, you're all here"
-
-    play sound "audio/blop.mp3"
 
     michelle "I made this group chat because of the Northride High blog"
     michelle "I know from a reliable source that we're all suspects"
@@ -68,6 +81,7 @@ label start:
             jump whoAreYou
         "What blog?":
             jump whatBlog
+
 
 label day2:
 

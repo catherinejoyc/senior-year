@@ -1,5 +1,5 @@
 label whoAreYou:
-    "Who are you guys?"
+    mc_user "Who are you guys?"
 
     michelle "just look @our profiles"
 
