@@ -74,4 +74,8 @@ label whatBlog:
     michelle "[mc] you haven't said anything, what do you make of this situation?"
     michelle "the blog I mean"
 
-    jump day2
+    menu:
+        "We have to do something!":
+            jump weHaveToDoSomething
+        "It's not that deep":
+            jump itsNotThatDeep

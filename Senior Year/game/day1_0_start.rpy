@@ -7,6 +7,11 @@ define lucy = Character("qUeEn_Of_RaNdOm", color="#bcbd51", kind=nvl)
 define mc_user = Character("[username]", kind=nvl)
 define mc = Character("[name]")
 
+define michelle_Score = 0
+define jason_Score = 0
+define damien_Score = 0
+define lucy_Score = 0
+
 label start:
 
     scene bg room
