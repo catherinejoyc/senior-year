@@ -20,7 +20,7 @@ label itsNotThatDeep:
     lucy "yEs InNoCeNt pPl R sUfFeRiNg D:"
     lucy "u ShOuLd B a BiT nIcEr >_<!!!"
     lucy "sAy No 2 BuLlYiNg!!!!!"
-    lucy "*stars sniffling*"
+    lucy "*starts sniffling*"
 
     damien "What is happening"
 
@@ -30,7 +30,7 @@ label itsNotThatDeep:
 
     jason "fuck wut did we do"
 
-    lucy "*stars sobbing*"
+    lucy "*starts sobbing*"
 
     jason "OH SHIT"
 
@@ -54,3 +54,13 @@ label itsNotThatDeep:
 
     michelle "I never said that."
     michelle "any ideas, [mc]?"
+
+    menu:
+        "Let's hack the blog":
+            jump hackBlog
+        "Let's watch people Sherlock-Holmes style":
+            jump sherlockHolmes
+        "Let's make a bunch of fake accounts and catfish people":
+            jump catfish
+        "LET'S BREAK INTO THE SCHOOL":
+            jump breakIntoSchool
